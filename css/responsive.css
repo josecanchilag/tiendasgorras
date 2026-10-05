@@ -1,0 +1,289 @@
+/* =========================================================
+   URBAN CAPS · responsive.css
+   Ajustes por punto de ruptura: laptop, tablet y móvil.
+   ========================================================= */
+
+/* ------------------------- Pantallas XL / desktop ------------------------- */
+@media (max-width: 1399.98px) {
+    .uc-hero-card--price {
+        left: -10px;
+    }
+
+    .uc-hero-card--rating {
+        right: 0;
+    }
+}
+
+/* ----------------------------- Tablet / laptop ---------------------------- */
+@media (max-width: 1199.98px) {
+    .uc-section {
+        padding: 64px 0;
+    }
+
+    .uc-hero {
+        padding: 56px 0 64px;
+    }
+
+    .uc-hero-stats {
+        gap: 26px;
+        margin-top: 32px;
+    }
+
+    .uc-product-gallery {
+        position: static;
+    }
+
+    .uc-cart-summary--sticky {
+        position: static;
+    }
+}
+
+/* ------------------------------- Tablet ---------------------------------- */
+@media (max-width: 991.98px) {
+    :root {
+        --uc-navbar-h: 68px;
+    }
+
+    .uc-navbar {
+        background: rgba(255, 255, 255, 0.98);
+    }
+
+    .uc-navbar .navbar-collapse {
+        background: #fff;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 16px 30px rgba(11, 31, 51, 0.14);
+        padding: 14px 18px 20px;
+        margin-top: 10px;
+        max-height: calc(100vh - var(--uc-navbar-h) - 20px);
+        overflow-y: auto;
+    }
+
+    .uc-navbar .nav-link {
+        padding: 0.7rem 0.4rem !important;
+        font-size: 1rem;
+    }
+
+    .uc-navbar .nav-link::after {
+        left: 0.4rem;
+        right: auto;
+        width: 26px;
+    }
+
+    .uc-navbar .nav-item {
+        width: 100%;
+    }
+
+    .uc-cart-link {
+        width: 100%;
+        justify-content: flex-start;
+        background: transparent;
+        border-radius: 12px;
+        height: auto;
+        padding: 0.7rem 0.4rem;
+        gap: 10px;
+        font-size: 1rem;
+    }
+
+    .uc-cart-link i::after {
+        content: "Carrito";
+        font-family: var(--uc-fuente-texto);
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+
+    .uc-cart-count {
+        position: static;
+        border: none;
+        margin-left: auto;
+    }
+
+    .uc-hero-title {
+        letter-spacing: -1px;
+    }
+
+    .uc-hero-visual {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .uc-hero-card--price {
+        left: 10px;
+        bottom: 24px;
+    }
+
+    .uc-hero-card--rating {
+        right: 10px;
+        top: 20px;
+    }
+
+    .uc-promo-badge {
+        width: 190px;
+        height: 190px;
+        margin-top: 24px;
+    }
+
+    .uc-promo-badge strong {
+        font-size: 3.2rem;
+    }
+
+    .uc-product-actions .btn {
+        min-width: 100%;
+    }
+
+    .uc-footer {
+        padding-top: 48px;
+    }
+}
+
+/* ------------------------------ Móvil ------------------------------------ */
+@media (max-width: 767.98px) {
+    .uc-section {
+        padding: 52px 0;
+    }
+
+    .uc-hero {
+        padding: 44px 0 54px;
+        text-align: left;
+    }
+
+    .uc-hero-img {
+        aspect-ratio: 4 / 4.2;
+        border-radius: 22px;
+    }
+
+    .uc-hero-stats {
+        gap: 20px;
+    }
+
+    .uc-hero-stats strong {
+        font-size: 1.4rem;
+    }
+
+    .uc-filters {
+        padding: 18px;
+    }
+
+    .uc-cart-head {
+        display: none !important;
+    }
+
+    .uc-cart-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 16px;
+        border-radius: 14px;
+        border-top: 1px solid rgba(11, 31, 51, 0.08);
+        margin-bottom: 14px;
+    }
+
+    .uc-cart-item:last-child {
+        border-radius: 14px;
+    }
+
+    .uc-cart-product,
+    .uc-cart-actions {
+        grid-column: 1 / -1;
+    }
+
+    .uc-cart-actions {
+        justify-content: flex-start;
+    }
+
+    .uc-cart-cell--label {
+        display: block;
+    }
+
+    .uc-checkout-block {
+        padding: 20px;
+    }
+
+    .uc-contact-form {
+        padding: 20px;
+    }
+
+    .uc-page-hero {
+        padding: 38px 0;
+    }
+
+    .uc-promo-title span {
+        display: inline-block;
+    }
+}
+
+/* ---------------------------- Móvil pequeño ------------------------------- */
+@media (max-width: 575.98px) {
+    .uc-hero-card--price {
+        left: 8px;
+        bottom: 12px;
+        padding: 9px 12px;
+    }
+
+    .uc-hero-card--rating {
+        right: 8px;
+        top: 12px;
+        padding: 9px 12px;
+    }
+
+    .uc-hero-card--price span,
+    .uc-hero-card--rating span {
+        font-size: 0.7rem;
+    }
+
+    .uc-hero-stats {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .uc-cart-item {
+        grid-template-columns: 1fr;
+    }
+
+    .uc-card-actions {
+        flex-direction: column;
+    }
+
+    .uc-cart-product img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .uc-payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .uc-promo-badge {
+        width: 165px;
+        height: 165px;
+    }
+
+    .uc-promo-badge strong {
+        font-size: 2.7rem;
+    }
+
+    .uc-footer-bottom {
+        text-align: center;
+    }
+
+    .uc-product-thumbs button {
+        width: 68px;
+        height: 68px;
+    }
+
+    .uc-order-number {
+        font-size: 1.35rem;
+        min-width: 180px;
+    }
+}
+
+/* --------------------------- Mejoras de accesibilidad -------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

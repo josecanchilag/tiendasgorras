@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Caps: tienda online de gorras urbanas, deportivas, snapback, trucker y premium. Encuentra tu estilo y lleva tu actitud. Envíos a todo el país.">
+    <meta name="keywords" content="gorras, gorras urbanas, snapback, trucker, gorras deportivas, tienda de gorras">
+    <meta name="author" content="Urban Caps">
+    <title>Urban Caps | Gorras urbanas, snapback y premium</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <meta name="theme-color" content="#0B1F33">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Urban Caps">
+    <meta property="og:title" content="Urban Caps | Encuentra tu estilo. Lleva tu actitud.">
+    <meta property="og:description" content="Gorras urbanas, deportivas, snapback, trucker y premium. Envíos a todo el país.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1635650804263-1a1941e14df5?auto=format&fit=crop&w=1200&q=80">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home" data-base="">
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <!-- Navbar y footer se componen desde JS (js/components/) -->
+    <div id="navbar-container"></div>
+
+    <main id="contenido">
+
+        <!-- ============================= HERO ============================= -->
+        <section class="uc-hero" id="inicio">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <span class="uc-eyebrow"><i class="bi bi-lightning-charge-fill"></i> Nueva colección 2026</span>
+                        <h1 class="uc-hero-title">Encuentra tu estilo.<br><span>Lleva tu actitud.</span></h1>
+                        <p class="uc-hero-text">
+                            Gorras urbanas diseñadas para quienes convierten la calle en su pasarela.
+                            Calidad premium, diseños exclusivos y la comodidad que tu día a día merece.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="pages/productos.html" class="btn btn-primary btn-lg uc-btn-shadow">
+                                Comprar ahora <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                            <a href="pages/productos.html" class="btn btn-outline-dark btn-lg">
+                                Ver colección
+                            </a>
+                        </div>
+                        <div class="uc-hero-stats">
+                            <div>
+                                <strong>24+</strong>
+                                <span>Modelos únicos</span>
+                            </div>
+                            <div>
+                                <strong>4.8</strong>
+                                <span>Valoración media</span>
+                            </div>
+                            <div>
+                                <strong>12k</strong>
+                                <span>Clientes felices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="uc-hero-visual">
+                            <img
+                                src="https://images.unsplash.com/photo-1635650804263-1a1941e14df5?auto=format&fit=crop&w=1000&q=80"
+                                alt="Joven con estilo urbano utilizando una gorra moderna"
+                                class="uc-hero-img"
+                                width="1000" height="1200">
+                            <div class="uc-hero-card uc-hero-card--price">
+                                <i class="bi bi-truck"></i>
+                                <div>
+                                    <strong>Envío gratis</strong>
+                                    <span>En compras +$200.000</span>
+                                </div>
+                            </div>
+                            <div class="uc-hero-card uc-hero-card--rating">
+                                <div class="uc-stars" aria-hidden="true">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span>4.8 / 5 · +2.400 reseñas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================== CATEGORÍAS =========================== -->
+        <section class="uc-section" id="categorias">
+            <div class="container">
+                <div class="row align-items-end mb-4">
+                    <div class="col-lg-8">
+                        <span class="uc-eyebrow"><i class="bi bi-grid"></i> Explora</span>
+                        <h2 class="uc-section-title">Categorías</h2>
+                        <p class="uc-section-text">Seis universos de estilo para cada ocasión, desde la cancha hasta el escenario.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="pages/productos.html" class="btn btn-outline-dark">Ver todo el catálogo <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Urbanas" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1488899745069-4f90eb80f1ff?auto=format&fit=crop&w=800&q=80" alt="Gorra urbana negra con fondo de grafiti" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Gorras Urbanas</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Deportivas" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1570748092285-6203601e4bcb?auto=format&fit=crop&w=800&q=80" alt="Gorra deportiva azul en uso al aire libre" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Gorras Deportivas</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Snapback" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1458046143265-1824ba230418?auto=format&fit=crop&w=800&q=80" alt="Mujer con gorra snapback negra de ala plana" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Gorras Snapback</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Trucker" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1678721938524-1a3ee398de2a?auto=format&fit=crop&w=800&q=80" alt="Gorra trucker negra y blanca sobre fondo claro" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Gorras Trucker</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Premium" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1679658431014-26120e14faad?auto=format&fit=crop&w=800&q=80" alt="Gorra premium exhibida junto a un patineta en una repisa" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Gorras Premium</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <a href="pages/productos.html?categoria=Ediciones%20Especiales" class="uc-cat-card">
+                            <img src="https://images.unsplash.com/photo-1604532057336-2c4a09f71330?auto=format&fit=crop&w=800&q=80" alt="Gorra fitted negra y amarilla de edición especial" loading="lazy">
+                            <div class="uc-cat-overlay">
+                                <h3>Ediciones Especiales</h3>
+                                <span>Ver modelos <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== PRODUCTOS DESTACADOS ======================== -->
+        <section class="uc-section uc-section--beige" id="destacados">
+            <div class="container">
+                <div class="row align-items-end mb-4">
+                    <div class="col-lg-8">
+                        <span class="uc-eyebrow"><i class="bi bi-star"></i> Los favoritos</span>
+                        <h2 class="uc-section-title">Productos destacados</h2>
+                        <p class="uc-section-text">Las gorras más vendidas de la temporada, seleccionadas por nuestra comunidad.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="pages/productos.html" class="btn btn-primary">Ver todos <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div id="destacados-grid" class="row g-4" aria-live="polite">
+                    <div class="col-12 text-center py-5">
+                        <div class="uc-loader" role="status" aria-label="Cargando productos"></div>
+                        <p class="mt-3 text-muted">Cargando productos destacados…</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== SECCIÓN PROMOCIONAL ========================== -->
+        <section class="uc-promo" id="ofertas">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="uc-eyebrow uc-eyebrow--light"><i class="bi bi-tags-fill"></i> Promoción limitada</span>
+                        <h2 class="uc-promo-title">Hasta <span>30% OFF</span> en productos seleccionados</h2>
+                        <p class="uc-promo-text">
+                            Renueva tu look con nuestras gorras en descuento. Aplican en modelos urbanos,
+                            snapback y ediciones especiales mientras duren existencias.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="pages/productos.html?ofertas=1" class="btn btn-light btn-lg">
+                                Ver ofertas <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                            <span class="uc-promo-code">Código: <strong>URBAN30</strong></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="uc-promo-badge">
+                            <span class="uc-promo-badge--top">DESCUENTO</span>
+                            <strong>30%</strong>
+                            <span>OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== NOSOTROS ============================== -->
+        <section class="uc-section" id="nosotros">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <img
+                            src="https://images.unsplash.com/photo-1653704841996-c2ed854aedd8?auto=format&fit=crop&w=1000&q=80"
+                            alt="Repisa de tienda con una colección de gorras"
+                            class="uc-about-img"
+                            loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="uc-eyebrow"><i class="bi bi-geo-alt"></i> Nuestra esencia</span>
+                        <h2 class="uc-section-title">Somos Urban Caps</h2>
+                        <p class="uc-section-text">
+                            Nacimos en 2018 con una idea simple: que una gorra pueda contar quién eres.
+                            Seleccionamos materiales nobles, supervisamos cada costura y diseñamos piezas
+                            que resisten el ritmo de la ciudad.
+                        </p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-sm-6">
+                                <div class="uc-feature">
+                                    <i class="bi bi-award"></i>
+                                    <div>
+                                        <h3>Calidad garantizada</h3>
+                                        <p>Materiales premium y control de calidad en cada unidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="uc-feature">
+                                    <i class="bi bi-truck"></i>
+                                    <div>
+                                        <h3>Envíos a todo el país</h3>
+                                        <p>Despachos rápidos y seguros con seguimiento en línea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="uc-feature">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                    <div>
+                                        <h3>Cambios sin líos</h3>
+                                        <p>Hasta 30 días para cambiar tu gorra si no era la tuya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="uc-feature">
+                                    <i class="bi bi-shield-check"></i>
+                                    <div>
+                                        <h3>Compra segura</h3>
+                                        <p>Pagos protegidos y datos siempre cifrados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== CONTACTO ============================== -->
+        <section class="uc-section uc-section--dark" id="contacto">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <span class="uc-eyebrow uc-eyebrow--light"><i class="bi bi-chat-dots"></i> Hablemos</span>
+                        <h2 class="uc-section-title text-white">Contacto</h2>
+                        <p class="uc-section-text text-white-50">
+                            ¿Dudas sobre tallas, pedidos o envíos? Escríbenos y te respondemos el mismo día.
+                        </p>
+                        <ul class="uc-contact-list">
+                            <li><i class="bi bi-geo-alt-fill"></i> Cra. 15 #93-45, Bogotá, Colombia</li>
+                            <li><i class="bi bi-telephone-fill"></i> +57 (601) 555 0142</li>
+                            <li><i class="bi bi-envelope-fill"></i> hola@urbancaps.com</li>
+                            <li><i class="bi bi-clock-fill"></i> Lun a Sáb · 9:00 a.m. – 7:00 p.m.</li>
+                        </ul>
+                        <div class="uc-social-row">
+                            <a href="#" aria-label="Instagram de Urban Caps"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook de Urban Caps"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="TikTok de Urban Caps"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" aria-label="X (Twitter) de Urban Caps"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form class="uc-contact-form" id="form-contacto" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contacto-nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="contacto-nombre" placeholder="Tu nombre" required>
+                                    <div class="invalid-feedback">Por favor escribe tu nombre.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contacto-correo" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="contacto-correo" placeholder="tucorreo@email.com" required>
+                                    <div class="invalid-feedback">Escribe un correo válido.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contacto-asunto" class="form-label">Asunto</label>
+                                    <select class="form-select" id="contacto-asunto" required>
+                                        <option value="" selected disabled>Selecciona una opción</option>
+                                        <option>Consulta de producto</option>
+                                        <option>Estado de mi pedido</option>
+                                        <option>Cambios y devoluciones</option>
+                                        <option>Otro</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un asunto.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contacto-mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="contacto-mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                                    <div class="invalid-feedback">Escribe tu mensaje.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        Enviar mensaje <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data/productos.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/productCard.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+</html>
